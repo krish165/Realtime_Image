@@ -33,8 +33,8 @@ function gotResult(error,results)
     var utterThis=new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
 
-    document.getElementById("object_name").innerHTML="Object: "+results[0].label;
-    document.getElementById("object_accuracy").innerHTMl="Confidence:"+results[0].confidence;
+    document.getElementById("object_name").innerHTML=results[0].label;
+    document.getElementById("object_accuracy").innerHTML=results[0].confidence;
     }
   }
 }
